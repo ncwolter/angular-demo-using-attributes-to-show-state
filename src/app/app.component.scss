@@ -1,0 +1,56 @@
+:host {
+    display: block;
+    width: 600px;
+}
+
+.card {
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: black;
+    margin: 4px;
+    text-align: center;
+    padding: 50px;
+}
+
+.small {
+    height: 100px;
+    width: 100px;
+}
+
+.large {
+    height: 200px;
+    width: 200px;
+}
+
+.full-line {
+    display: block;
+    width: 100%;
+}
+
+.status-display {
+    &[status='Pending'] {
+        border-color: lightgrey;
+        label{
+            color: lightgrey;
+        }
+    }
+    &[status='Running'] {
+        border-color: lightseagreen;
+        label{
+            color: lightseagreen;
+        }
+    }
+    &[status='Failed'] {
+        border-color: darkred;
+        label{
+            color: darkred;
+        }
+    }
+    &[status='Successful'] {
+        border-color: green;
+        label{
+            color: green;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<div class="status-display card large" [attr.status]="status$ | async">
+    Some Text!!
+    <br>
+    <br>
+    <br>
+    <label>
+        {{ status$ | async }}
+    </label>
+</div>
+<div class="status-display card small" [attr.status]="status$ | async">
+    Some Text!!
+    <br>
+    <br>
+    <br>
+    <label>
+        {{ status$ | async }}
+    </label>
+</div>
+<div class="status-display card small full-line" [attr.status]="status$ | async">
+    Some Text!!
+    <br>
+    <br>
+    <br>
+    <label>
+        {{ status$ | async }}
+    </label>
+</div>
